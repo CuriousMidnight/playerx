@@ -1,0 +1,24 @@
+{
+    "title": "Tokyo Vice S1 Ep3",
+    "duration": 3380,
+    "sources": [
+        {
+            "url": "https://pnagb.vid109d224.site/_v2-gxld/12a3c523ff105800ed8c394685aeeb0bc62ea85c5db9b7fa08057baea93ece832257df1a4b6125fcfa38c35da05dee86aad28d46d73fc4e9d4e5a43f5272b485619914e3091fb4091486a3b86714671b642ec17b4500319e9dcabf08d4e373dc2d/h/dfda4/bd;15a38634f803584ba8926411d7bee906856cab0654b5b8.m3u8",
+            "contentType": "video/mp4",
+            "quality": 1080
+        }
+    ],
+    "subTracks": [
+        {
+            "language": "en",
+            "label": "AI subs",
+            "url": "https://raw.githubusercontent.com/CuriousMidnight/playerz/master/f2.ass",
+            "contentType": "text/x-ass"
+        }
+  ],
+  "fonts": [
+    "https://bm.txm1.workers.dev/0:/NotoSansJP-VariableFont_wght.ttf",
+    "https://bm.txm1.workers.dev/0:/Montserrat-Italic-VariableFont_wght.ttf",
+    "https://bm.txm1.workers.dev/0:/Montserrat-VariableFont_wght.ttf"
+  ]
+}
