@@ -1,0 +1,113 @@
+//* to save me and hotshott some headaches, here are some simple CSS rules to keep things easy:
+ 1) there are 3 user groups, admin, mod, whitey, any amendments to a user's style rules should be made under their appropriate role and if their role changes, replace their rules to the correct role
+ 2) don't make edits such as .chat-msg-<nam> where it should be .chat-msg-<name>, instead delete the line or comment it out if unsure
+ 3) admins get full reign of their CSS elements (within reason), mods get coloured shouts, whiteys get coloured names
+ 4) don't fuck with anything under the user group styles
+
+USERNAME EDIT TEMPLATES:
+
+.chat-msg-<NAME> .username{color: #colour;} produces a block coloured username
+.chat-msg-<NAME> .username{font-weight: bold; background: -webkit-linear-gradient(GRADIENT INFO); -webkit-background-clip: text; -webkit-text-fill-color: transparent;} produces a gradient username
+
+*/
+
+.qe_blame {     float: right;     padding-right: 3px;  }
+
+
+#mainpage
+{
+    background: #272727;
+}
+
+.userlist_item {padding-left: 3px; height: 14px;}
+.userlist_item.userlist_afk {opacity: 0.5;}
+.glyphicon-time:before {content:none; color: #888888;}
+
+/* Top Navigation Bar Image */
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #697075;
+    background-image: url('https://i3.lensdump.com/i/IM8YIr.png');
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: black;
+}
+
+b, strong {
+    font-weight: 700;
+    color: #d3d3d3;
+}
+
+
+/* USERGROUP COLORS */
+.userlist_owner { font-weight: bold !important; color: #3366ff !important;} /* ADMIN */
+.userlist-Swerveface { font-weight: bold !important; color: #FFFF00 !important;} /* SITE ADMIN */
+.userlist-C_Higgy { font-weight: bold !important; color: #FFFF00 !important;} /* SITE ADMIN */
+.userlist-DashingCN { font-weight: bold !important; color: #FFFF00 !important;} /* SITE ADMIN */
+.userlist_op { font-weight: bold !important; color: #ff3399 !important; } /* MOD */
+.userlist_item { color: #ffffff !important; } /* WHITEYS */
+.userlist_guest {color: #888888 !important;} /* GUESTS */
+
+
+/* HOWTO Stuff */
+
+/* Append something to each chat line */
+/*.chat-msg-<NAME> .username::after {content: ", in Jimmy's Mother's Voice: ";}*/
+
+/* Shadowmute someone with CSS- */
+/*.chat-msg-<NAME> span {display: none;}*/
+
+/* Bury someones /say */
+/* .chat-msg-<NAME> .shout {color: #c8c8c8;font-size: 14px;font-weight: normal;} */
+
+/* Image before a person's name */
+/*.chat-msg-<NAME> .username:before {content: url(http://i.imgur.com/eS2SQ9m.png) " ";}*/
+
+/* Rename someone in chat */
+/*
+.chat-msg-<ORGINAL NAME> .username{font-size: 0px;}
+.chat-msg-<ORGINAL NAME> .username::after{font-size: 14px;content: "<NEW NAME>: ";color: red;}
+*/
+
+/* Affects the whole chat, SHOULDNT NEED TO CHANGE ANYTHING BELOW */
+/* */
+/* */
+/* */
+
+span.timestamp { font-size:8px; } /*size of the timestamp, keeps fixed across all messages*/
+span.timestamp.shout { font-size:8px; }
+
+a:link, a:focus, a:visited {color: #FFFFFF;} /*colour of links, keeps white across all links*/
+a:hover, a:active {color: #FFFFFF;}
+
+::-webkit-scrollbar{width: 8px;} /*scroll bar width*/
+#userlist, #messagebuffer{overflow:hidden;} /*shit to do with how the CSS manages long user/message lists, DON'T FUCK WITH*/
+#userlist:hover, #messagebuffer:hover{overflow-y:scroll;} /*the same, how it manages hovering over users/messages don't fuck*/
+#userlist{font-size: 8pt; width: 100px; white-space: nowrap; text-overflow: clip;} /*layout of the userlist, don't fuck*/
+#chatheader, #userlist, #messagebuffer, #videowrap{background: #161616; border-top: 0;} /*to do with background and layout of the page elements*/
+#chatheader, #currenttitle {padding: 2px;}
+.well {background-color: #161616}
+#motdrow, #announcements, #main, #playlistrow {margin-bottom: none;}
+hr.style-two {border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(180, 180, 180, 1), rgba(0, 0, 0, 0));}
+#plmeta {background: none; padding: none; font-size: 10pt;}
+.nick-hover {background-color: #242424;}
+input.form-control[type="text"], input.form-control[type="password"],
+input.form-control[type="email"], textarea.form-control {background-color: #141414 !important; color: #c8c8c8;}
+
+
+.form-control:focus {outline-color: none;}
+
+footer {background-color: #121212 !important}
+.modal-content {background-color: #242424}
+.panel-body {background-color: #181818;}
+
+/* Add a watermark to the top right of the chat window */
+#messagebuffer {
+    /*background-image: url("");*/
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+/*color: #ea77af;/*
+/*text-align: right;*/
